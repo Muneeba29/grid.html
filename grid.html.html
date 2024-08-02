@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+     body{background-image:url("https://img.freepik.com/premium-vector/checkered-background-transparent-texture-vector-grid-pattern-gray-white-backdrop_231786-5362.jpg?w=1060");}
+
+     #whole{ display: flex; 
+             justify-content: space-evenly;}
+
+     p{font-size: 2em;  
+             text-align: center;
+             font-weight: bolder;}
+
+     .container1{ display: grid;
+             gap: 12px; 
+             grid-template-columns:auto auto ;
+             border: 6px solid navy;
+             padding: 20px;} 
+
+     .container2{ display: grid;
+             gap: 12px; 
+             grid-template-columns:auto auto ;
+             border: 6px solid green;
+            padding: 20px;
+             justify-items: center;} 
+
+     .parts{ display: flex;
+             margin-right: -20px;
+            margin-left: -10px;}
+
+     .container2a{ border: 4px solid green;
+             padding: 4px;
+             margin-top: -7.5px;
+             margin-bottom: -7.5px;}
+
+     .container2b{display: grid;
+             border: 4px solid green;
+             padding: 4px;
+             row-gap: 12px;
+             margin-top: -7.5px;
+             margin-bottom: -7.5px;}
+
+     .container3{ display: grid;
+             gap: 12px; 
+             grid-template-columns:auto auto ;
+             color: white;
+             font-size: 1.5em;
+             font-weight: bold;
+             border: 6px solid red;
+             padding: 20px;
+             text-align: center;} 
+
+
+     .rule1{background-color: navy;
+          width: 450px;height: 85px;
+          grid-column: 1/3;}
+
+     .rule2{background-color: navy;
+         width: 219px;height: 265px;
+         grid-column: 1/2;
+         grid-row: 2/4;}
+
+     .rule3{background-color: navy; 
+         width: 219px;height: 125px;
+         grid-column: 2/3;}
+
+     .rule4{background-color: navy;
+         width: 219px;height: 125px;
+         grid-column: 2/3;}
+
+     .rule5{background-color: navy;
+         width: 450px;height: 140px;
+         grid-column: 1/3;}
+
+     .rule6{background-color: navy;
+         width: 450px;height: 60px;
+         grid-column: 1/3;}
+
+     .rule7{background-color: orange;
+         width: 450px;height: 85px;
+         grid-column: 1/3;}
+
+     .rule8{background-color: orange;
+         width: 219px;height: 265px;
+         grid-column: 1/2;
+         grid-row: 2/4;}
+
+     .rule9{background-color: orange;
+         width: 219px;height: 125px;
+         grid-column: 2/3;}
+
+     .rule10{background-color: orange;
+         width: 219px;height: 125px;
+         grid-column: 2/3;}
+
+     .rule11{background-color: orange;
+         width: 450px;height: 140px;
+         grid-column: 1/3;}
+
+     .rule12{background-color: orange;
+        width: 450px;height: 60px;
+        grid-column: 1/3;}
+
+     .rule13{background-color: navy;
+         width: 450px;height: 85px;
+         grid-column: 1/3;
+         place-content:center;}
+
+     .rule14{background-color: navy;
+         width: 219px;height: 265px
+         ;grid-column: 1/2;
+         grid-row: 2/4;
+         place-content:center;}
+
+     .rule15{background-color: navy;
+         width: 219px;height: 125px;
+         grid-column: 2/3;
+         place-content:center;}
+
+     .rule16{background-color: navy;
+         width: 219px;height: 125px;
+         grid-column: 2/3;
+         place-content:center;}
+
+     .rule17{background-color: navy;
+         width: 450px;height: 140px;
+         grid-column: 1/3;
+         place-content:center;}
+
+     .rule18{background-color: navy;
+         width: 450px;height: 60px;
+         grid-column: 1/3;
+         place-content:center;}
+
+</style>
+</head>
+<body>
+     <div id="whole">
+         <div class="template">
+         <p>TEMPLATE</p>
+         <div class="container1">
+             <div class="rule1"></div>
+             <div class="rule2"></div>
+             <div class="rule3"></div>
+             <div class="rule4"></div>
+             <div class="rule5"></div>   
+             <div class="rule6"></div>    
+         </div>
+         </div>
+ 
+         <div class="flexbox">
+         <p>FLEXBOX</p>
+         <div class="container2">
+             <div class="rule7"></div>
+             <div class="parts">
+             <div class="container2a">
+             <div class="rule8"></div>
+             </div>
+             <div class="container2b">
+             <div class="rule9"></div>
+             <div class="rule10"></div>
+             </div>
+             </div>
+             <div class="rule11"></div>   
+             <div class="rule12"></div>   
+         </div>
+         </div>
+
+         <div class="grid">
+         <p>GRID</p>
+         <div class="container3">
+             <div class="rule13">HEADER</div>
+             <div class="rule14">ARTICLE</div>
+             <div class="rule15">TEXT1</div>
+             <div class="rule16">TEXT2</div>
+             <div class="rule17">MAIN</div>
+             <div class="rule18">FOOTER</div>
+         </div>
+         </div>
+     </div>
+</body>
+</html>
